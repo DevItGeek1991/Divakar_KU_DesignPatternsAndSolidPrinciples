@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91DEB5EB-5426-4D8D-90F5-3FD0974DB7BB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Divakar_DesignPatternsAndSolidPrinciples</RootNamespace>
+    <AssemblyName>Divakar_DesignPatternsAndSolidPrinciples</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract_Factory_Design_Pattern_10.cs" />
+    <Compile Include="Adapter_Design_Pattern_17.cs" />
+    <Compile Include="Bridge_Design_Pattern_18.cs" />
+    <Compile Include="Builder_Design_Pattern_Implementation_12.cs" />
+    <Compile Include="Builder_Design_Pattern_Introduction_11.cs" />
+    <Compile Include="Composite_Design_Pattern_19.cs" />
+    <Compile Include="Decorator_Design_Pattern_20.cs" />
+    <Compile Include="Exception_Logging_using_Singleton_Design_Pattern_7.cs" />
+    <Compile Include="Facade_Design_Pattern_21.cs" />
+    <Compile Include="Factory_Design_Pattern_Introduction_8.cs" />
+    <Compile Include="Factory_Method_Design_Pattern_9.cs" />
+    <Compile Include="Fluent_Builder_Design_Pattern_13.cs" />
+    <Compile Include="Introduction_to_Design_Patterns_1.cs" />
+    <Compile Include="Lazy_vs_Eager_loading_in_Singleton_5.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype_Design_Pattern_Implementation_15.cs" />
+    <Compile Include="ProtoType_Design_Pattern_Introduction_14.cs" />
+    <Compile Include="Singleton_Design_Pattern_2.cs" />
+    <Compile Include="Static_Class_vs_Singleton_6.cs" />
+    <Compile Include="Structural_Design_Patterns_Introduction_16.cs" />
+    <Compile Include="Thread_Safety_in_Singleton_4.cs" />
+    <Compile Include="Why_is_singleton_class_sealed_3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C9E71A4-AF73-47A7-A104-F66C3FBF7D80}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Divakar_CSharp</RootNamespace>
+    <AssemblyName>Divakar_CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="100_Func_delegate_in_CSharp.cs" />
+    <Compile Include="101_Async_and_await_in_CSharp.cs" />
+    <Compile Include="102_How_to_wait_for_a_thread_to_finish_without_blocking.cs" />
+    <Compile Include="10_If_statement.cs" />
+    <Compile Include="11_Switch_statement.cs" />
+    <Compile Include="12_Switch_continued.cs" />
+    <Compile Include="13_While_loop.cs" />
+    <Compile Include="14_Do_while_loop.cs" />
+    <Compile Include="15_For_And_foreach_loop.cs" />
+    <Compile Include="16_Methods.cs" />
+    <Compile Include="17_Method_parameters.cs" />
+    <Compile Include="18_Namespaces.cs" />
+    <Compile Include="19_Class-Introduction.cs" />
+    <Compile Include="1_Introduction.cs" />
+    <Compile Include="20_Static_And_Instance_members.cs" />
+    <Compile Include="21_Inheritance.cs" />
+    <Compile Include="22_Method_hiding.cs" />
+    <Compile Include="23_Polymorphism.cs" />
+    <Compile Include="24_Method_overriding_Vs_hiding.cs" />
+    <Compile Include="25_Method_overloading.cs" />
+    <Compile Include="26_Why_Properties.cs" />
+    <Compile Include="27_Properties.cs" />
+    <Compile Include="28_Structs.cs" />
+    <Compile Include="29_Classes_Vs_Structs.cs" />
+    <Compile Include="2_Reading_and_writing_to_a_console.cs" />
+    <Compile Include="30_Interfaces.cs" />
+    <Compile Include="31_Explicit_interface_implementation.cs" />
+    <Compile Include="32_Abstract_Classes.cs" />
+    <Compile Include="33_Abstract_Classes_Vs_Interfaces.cs" />
+    <Compile Include="34_Diamond_Problem.cs" />
+    <Compile Include="35_Multiple_inheritance.cs" />
+    <Compile Include="36_Delegates.cs" />
+    <Compile Include="37_Delegates_Example-I.cs" />
+    <Compile Include="38_Delegates_Example-II.cs" />
+    <Compile Include="39_Multicast_Delegates.cs" />
+    <Compile Include="3_Built-in_data_types.cs" />
+    <Compile Include="40_Exception_Handling.cs" />
+    <Compile Include="41_Inner_Exceptions.cs" />
+    <Compile Include="42_Custom_Exceptions.cs" />
+    <Compile Include="43_Exception_Handling_Abuse.cs" />
+    <Compile Include="44_Preventing_Exception_Handling_Abuse.cs" />
+    <Compile Include="45_Why_Enums.cs" />
+    <Compile Include="46_Enums_Example.cs" />
+    <Compile Include="47_Enums_Concepts.cs" />
+    <Compile Include="48_Types_vs_Type_Members.cs" />
+    <Compile Include="49_Access_Modifiers-Private_Public_and_Protected.cs" />
+    <Compile Include="4_String_data_type.cs" />
+    <Compile Include="50_Access_Modifiers-Internal_and_Protected_Internal.cs" />
+    <Compile Include="51_Access_Modifiers_for_types.cs" />
+    <Compile Include="52_Attributes.cs" />
+    <Compile Include="53_Reflection.cs" />
+    <Compile Include="54_Reflection_Example.cs" />
+    <Compile Include="55_Late_binding_using_reflection.cs" />
+    <Compile Include="56_Generics.cs" />
+    <Compile Include="57_Generic_Collections.cs" />
+    <Compile Include="57_Reason_to_override_ToString%28%29_method.cs" />
+    <Compile Include="58_Reason_to_override_Equals%28%29_method.cs" />
+    <Compile Include="59_Difference_between_Convert.ToString%28%29_and_ToString%28%29_method.cs" />
+    <Compile Include="5_Operators.cs" />
+    <Compile Include="60_Difference_between_string_and_stringbuilder.cs" />
+    <Compile Include="61_Partial_classes_in_CSharp.cs" />
+    <Compile Include="62_Creating_partial_classes_in_CSharp.cs" />
+    <Compile Include="63_Partial_methods_in_CSharp.cs" />
+    <Compile Include="64_How_and_where_are_indexers_used_in_Dotnet.cs" />
+    <Compile Include="65_Indexers_in_CSharp.cs" />
+    <Compile Include="66_Overloading_indexers.cs" />
+    <Compile Include="67_Optional_parameters.cs" />
+    <Compile Include="68_Making_method_parameters_optional_using_method_overloading.cs" />
+    <Compile Include="69_Making_method_parameters_optional_by_specifying_parameter_defaults.cs" />
+    <Compile Include="6_Nullable_Types.cs" />
+    <Compile Include="70_Making_method_parameters_optional_by_using_OptionalAttribute.cs" />
+    <Compile Include="71_Code_snippets_in_visual_studio.cs" />
+    <Compile Include="72_What_is_dictionary_in_CSharp.cs" />
+    <Compile Include="73_What_is_dictionary_in_CSharp_continued.cs" />
+    <Compile Include="74_List_collection_class_in_CSharp.cs" />
+    <Compile Include="75_List_collection_class_in_CSharp_continued.cs" />
+    <Compile Include="76_Working_with_generic_list_class_and_ranges_in_CSharp.cs" />
+    <Compile Include="77_Sort_a_list_of_simple_types_in_CSharp.cs" />
+    <Compile Include="78_Sort_a_list_of_complex_types_in_CSharp.cs" />
+    <Compile Include="79_Sort_a_list_of_complex_types_using_Comparison_delegate.cs" />
+    <Compile Include="7_Datatype_conversions.cs" />
+    <Compile Include="80_Some_useful_methods_of_List_collection_class.cs" />
+    <Compile Include="81_When_to_use_a_dictionary_over_list_in_CSharp.cs" />
+    <Compile Include="82_Generic_queue_collection_class.cs" />
+    <Compile Include="83_Generic_stack_collection_class.cs" />
+    <Compile Include="84_Real_time_example_of_queue_collection_class_in_CSharp.cs" />
+    <Compile Include="85_Real_time_example_of_stack_collection_class_in_CSharp.cs" />
+    <Compile Include="86_Multithreading_in_CSharp.cs" />
+    <Compile Include="87_Advantages_and_disadvantages_of_multithreading.cs" />
+    <Compile Include="88_ThreadStart_delegate.cs" />
+    <Compile Include="89_ParameterizedThreadStart_delegate.cs" />
+    <Compile Include="8_Arrays.cs" />
+    <Compile Include="90_Passing_data_to_the_Thread_function_in_a_type_safe_manner.cs" />
+    <Compile Include="91_Retrieving_data_from_Thread_function_using_callback_method.cs" />
+    <Compile Include="92_Significance_of_ThreaddotJoin_and_ThreaddotIsAlive_functions.cs" />
+    <Compile Include="93_Protecting_shared_resources_from_concurrent_access_in_multithreading.cs" />
+    <Compile Include="94_Difference_between_Monitor_and_lock_in_CSharp.cs" />
+    <Compile Include="95_Deadlock_in_a_multithreaded_program.cs" />
+    <Compile Include="96_How_to_resolve_a_deadlock_in_a_multithreaded_program.cs" />
+    <Compile Include="97_Performance_of_a_multithreaded_program.cs" />
+    <Compile Include="98_Anonymous_methods_in_CSharp.cs" />
+    <Compile Include="99_Lambda_expression_in_CSharp.cs" />
+    <Compile Include="9_Comments.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
